@@ -1,0 +1,168 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #F5F7FB;
+    --color-tertiary: #E0E4EC;
+    --color-button: #FF7A59;
+    --color-button-hover: #FF5C3B;
+    --color-text: #2E2E2E;
+    --color-accent: #05DF05;
+    --color-white: #FFFFFF;
+}
+
+/* === Global Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-secondary);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* === Main Content === */
+.main-content {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--color-white);
+    border-radius: 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* === Header === */
+.header-banner {
+    background-color: var(--color-primary);
+    padding: 30px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.main-title {
+    font-size: 56px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Merriweather", serif;
+    margin-bottom: 5px;
+}
+
+.header-banner img {
+    max-width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === Input Section === */
+.input-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+/* === Input and Button Styles === */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+    border: 2px solid var(--color-tertiary);
+    background-color: #f0f0f0;
+}
+
+.button-add {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 0 25px 25px 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.button-add:hover {
+    background-color: #3C54D6;
+}
+
+/* === Name List Styling === */
+.name-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.name-list li {
+    padding: 8px 15px;
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/* === Result Display === */
+.result-list {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3B6790;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+/* === Buttons for Actions === */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.button-draw {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.button-draw img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+.nombre-seleccionado {
+    color: #EFB036; /* Un tono verde, cámbialo al que quieras */
+    font-weight: bold;
+    font-size: 1.2em;
+}
